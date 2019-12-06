@@ -68,7 +68,6 @@ Adafruit_BME280::Adafruit_BME280(int8_t cspin, int8_t mosipin, int8_t misopin,
  *   @returns true on success, false otherwise
  */
 bool Adafruit_BME280::begin(uint8_t addr, TwoWire *theWire) {
-  // bool status = false;
   _i2caddr = addr;
   _wire = theWire;
   return init();
